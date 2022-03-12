@@ -5,7 +5,7 @@ function Template() {
   return (
     <div className='mt-44  '>
       <div className='grid sm:grid-cols-2 grid-cols-1 bg-white rounded-[2.5rem]
-       xl:mx-[14rem] lg:mx-[3rem] my-12 right-6 shadow-lg space-x-12 absolute py-24'
+       xl:mx-[14rem] lg:mx-[3rem] my-12 right-6 shadow-lg space-x-12 absolute lg:py-24'
       >
 
 

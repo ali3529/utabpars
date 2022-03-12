@@ -9,6 +9,8 @@ import Template from '../components/Template'
 import Why from '../components/Why'
 import dynamic from 'next/dynamic'
 
+import loadable from '@loadable/component'
+import LeaderShip from '../components/LeaderShip'
 
 export default function Home() {
 
@@ -16,6 +18,13 @@ export default function Home() {
   //   () => import('../components/Slider'),
   //   { ssr: false }
   // )
+  // const Why = loadable(() => import('../components/Why'))
+  // const Suggest = loadable(() => import('../components/Suggest'))
+  // const Template = loadable(() => import('../components/Template'))
+  // const Slider = loadable(() => import('../components/Slider'))
+  // const ServiceInfo = loadable(() => import('../components/ServiceInfo'))
+  // const Header = loadable(() => import('../components/Header'))
+  // const Blog = loadable(() => import('../components/Blog'))
   return (
     <>
      <Head>
@@ -42,6 +51,7 @@ export default function Home() {
 
       </Head>
       <div className='container xl:px-[120px] font-[sans] '>
+        {/* <div className='bg-ddd bg-no-repeat'> */}
         <div className=''>
 
         
@@ -50,9 +60,12 @@ export default function Home() {
        
         <ServiceInfo />
         </div>
+        {/* <Why /> */}
         <Why />
+
         <Suggest/>
         <Template/>
+        <LeaderShip/>
         <Blog/>
       </div>
      
@@ -62,17 +75,17 @@ export default function Home() {
     </>
   )
 }
-// export const getStaticProps = () => {
-//   return {
-//     props: {
-//       buildTimestamp: Date.now()
-//     }
-//   }
-// }
-export const getServerSideProps = () => {
+export const getStaticProps = () => {
   return {
     props: {
       buildTimestamp: Date.now()
     }
   }
 }
+// export const getServerSideProps = () => {
+//   return {
+//     props: {
+//       buildTimestamp: Date.now()
+//     }
+//   }
+// }

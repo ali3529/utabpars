@@ -25,11 +25,11 @@ function Suggest() {
 
     ]
     return (
-        <div className='sm:mt-28'>
+        <div className='sm:mt-28  lg:mt-30'>
 
 
             {/* title */}
-            <div className=' flex justify-center mt-10 '>
+            <div className=' flex justify-center  '>
                 <div className='flex flex-col items-center'>
                     <p className='text-xl font-bold'>پیشنهاد های ویژه</p>
                     <span className=' border-[3px] border-redprimary bg-redmain mt-2 w-14 rounded-xl '></span>
@@ -37,7 +37,7 @@ function Suggest() {
                 </div>
 
             </div>
-            <div className='grid sm:grid-cols-3 grid-cols-1 mt-10'>
+            <div dir='rtl' className='grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 mt-10'>
                 {
                     cardData.map((item, index) =>
                         <div key={index} className=' shadow-md rounded-[3rem] m-3 bg-ff bg-local bg-top bg-no-repeat'>
