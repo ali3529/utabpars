@@ -14,7 +14,7 @@ function Footer() {
     ]
     return (
         <div>
-            <div className='mt-24  md:flex hidden flex-col  bg-[#EBEBEB]' >
+            <div className='mt-24  md:flex hidden flex-col  bg-[#EBEBEB] font-[sans]' >
                 <div className='bg-redprimary w-full py-2 flex '>
 
                 </div>
@@ -38,20 +38,24 @@ function Footer() {
                                     </div>
                                     <div className='flex flex-row space-x-3 space-x-reverse'>
                                         <span className='font-bold '>ایمیل :</span>
-                                        <p className='hover:text-black'>info@utabpars.com</p>
+                                        {/* <p className='hover:text-black'>info@utabpars.com</p> */}
+                                        <a  href='mailto:info@utabpars.com'><span className='hover:text-redprimary'>info@utabpars.com</span></a>
+                                       
                                     </div>
 
                                     <div className='flex flex-row space-x-3 space-x-reverse'>
                                         <span className='font-bold '>تلفن :</span>
                                         <ul className='flex flex-row space-x-5 space-x-reverse '>
-                                            <li className='hover:text-black'>07191013320</li>
-                                            <li className='hover:text-black' >09378451002</li>
+                                        <a   href='tel:07191013320'><li className='hover:text-redprimary '>07191013320</li></a>
+                                        <a  href='tel:07191013320'><li className='hover:text-redprimary'>09378451002</li></a>
+                                            {/* <li className='hover:text-black'>07191013320</li> */}
+                                            {/* <li className='hover:text-black' >09378451002</li> */}
                                         </ul>
                                     </div>
                                     <div className=' py-2 flex space-x-5 space-x-reverse justify-start mt-3 '>
                                         {
                                             socialItem.map((item, index) =>
-                                                <img key={index} src={item} alt='instagram' className=' text-darkblue w-[35px]
+                                                <img key={index} src={item} alt='instagram' width={'100%'} height={'100%'} className=' text-darkblue w-[35px]
                                                       cursor-pointer transition-all duration-500
                                                       hover:-translate-y-4  hover:scale-125 ' />
                                             )
@@ -103,7 +107,7 @@ function Footer() {
             </div>
             {/* mobilde respnsive */}
             <div className='flex flex-col md:hidden '>
-            <div className=' py-1 flex bg-redprimary'></div>
+                <div className=' py-1 flex bg-redprimary'></div>
                 <div className='bg-[#EBEBEB] w-screen flex flex-col items-center'>
                     <img src='/img/utabpars.svg' alt='utabpars' width='100%' height='100%' className='w-36 ' />
                     <div className='flex flex-col items-center '>
@@ -129,14 +133,16 @@ function Footer() {
                                 <div className='flex flex-col items-center mt-8'>
                                     <span className='font-bold '>تلفن :</span>
                                     <ul className='flex flex-col'>
-                                        <li className='hover:text-black'>07191013320</li>
-                                        <li className='hover:text-black' >09378451002</li>
+                                    <a   href='tel:07191013320'><li className='hover:text-redprimary '>07191013320</li></a>
+                                        <a  href='tel:07191013320'><li className='hover:text-redprimary'>09378451002</li></a>
+                                        {/* <li className='hover:text-black'>07191013320</li>
+                                        <li className='hover:text-black' >09378451002</li> */}
                                     </ul>
                                 </div>
                                 <div className=' py-2 flex space-x-5 space-x-reverse justify-center mt-3 '>
                                     {
                                         socialItem.map((item, index) =>
-                                            <img key={index} src={item} alt='social' className=' text-darkblue w-[15px]
+                                            <img key={index} src={item} alt='social' className=' text-darkblue w-[3px]
                                                       cursor-pointer transition-all duration-500
                                                       hover:-translate-y-4  hover:scale-125' />
                                         )

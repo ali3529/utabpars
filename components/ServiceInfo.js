@@ -43,9 +43,9 @@ function ServiceInfo() {
     ]
 
     return (
-        <div className='mb-32' >
+        <div className='sm:mb-32 mb-0 ' >
             {/* title */}
-            <div className=' flex justify-center mt-10'>
+            <div className=' flex justify-center mt-10 mb-5 sm:mb-0'>
                 <div className='flex flex-col items-center'>
                     <p className='text-2xl font-bold'>خدمات یوتاب پارس</p>
                     <span className=' border-[3px] border-redprimary bg-redmain mt-2 w-16 rounded-xl '></span>

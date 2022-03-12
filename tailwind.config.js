@@ -25,6 +25,7 @@ module.exports = {
         'hero': "url('../public/img/serviceinfo/card_bg.svg')",
         'ff': "url('../public/img/suggest_bg.svg')",
         'ddd': "url('../public/img/bg.svg')",
+        'why': "url(../public/img/why_utab_back.svg)",
      
       }
 

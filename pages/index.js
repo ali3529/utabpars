@@ -50,16 +50,16 @@ export default function Home() {
 
 
       </Head>
-      <div className='container xl:px-[120px] font-[sans] '>
+      <div className='container xl:px-[120px] font-[sans]  '>
         {/* <div className='bg-ddd bg-no-repeat'> */}
-        <div className=''>
+     
 
         
         <Header />
         <Slider />
        
         <ServiceInfo />
-        </div>
+    
         {/* <Why /> */}
         <Why />
 

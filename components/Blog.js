@@ -13,7 +13,7 @@ function Blog() {
 
             <div className='grid  sm:grid-cols-2 grid-cols-1  mt-5 sm:space-x-6'>
                 {/* blog big */}
-                <div className='text-right shadow-md rounded-[2.5rem]  shadow-gray-300 py-6 px-5 mx-8'>
+                <div className='text-right shadow-md rounded-[2.5rem]  shadow-gray-300 py-6 px-5 sm:mx-8'>
                     {/* img */}
                     <div className='py-2'>
                         <img src='/img/tt.webp' className='rounded-[2rem] 'alt='blog' width="100%" height="100%"  />
