@@ -13,15 +13,15 @@ function Template() {
             {/* tempate mobilde */}
             <div className='flex sm:hidden sm:flex-row   '>
               <div className=' space-y-6 -mt-36 '>
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
+                <img src='/img/template/tem1.webp  ' className='rounded-[2.5rem] w-[320px] h-[160px] shadow-xl ' alt='template' />
+                <img src='/img/template/tem2.webp  ' className='rounded-[2.5rem] w-[320px] h-[160px] shadow-xl' alt='template' />
 
 
               </div>
 
               <div className='m-5 space-y-6 -mt-24'>
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
+                <img src='/img/template/tem3.webp ' className='rounded-[2.5rem] w-[320px] h-[160px] shadow-xl' alt='template' />
+                <img src='/img/template/tem4.webp  ' className='rounded-[2.5rem] w-[320px] h-[160px] shadow-xl' alt='template' />
 
               </div>
 
@@ -40,7 +40,7 @@ function Template() {
                 آژانس دیجیتال مارکتینگ یوتاب پارس نامی آشنا در زمینه راه اندازی کسب و کار آنلاین و ارائه خدمات دیجیتال مارکتینگ هست. کادر مجرب و حرفه ای یوتاب پارس همواره تلاش داشته کیفیت خدمات خود را در سطح بالا و مطابق با استانداردهای روز جهان منطبق کند. به همین سبب با کسب رضایت حداکثری مشتریان , یوتاب پارس به برندی
               </span>
               <button className='bg-redprimary rounded-full w-36  p-3 self-center
-          text-white sm:self-end transition-all duration-500 hover:scale-125 hover:text-darkblue'>لیست کار ها</button>
+          text-white sm:self-end transition-all duration-300 hover:scale-125  ease-out'>لیست کار ها</button>
             </div>
 
 
@@ -48,15 +48,16 @@ function Template() {
 
             <div className='sm:flex hidden sm:flex-row     '>
               <div className=' space-y-6 -mt-36 '>
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
+              <img src='/img/template/tem1.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl hover:scale-110 cursor-pointer transition-all duration-500 ' alt='template' />
+              <img src='/img/template/tem2.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl hover:scale-110 cursor-pointer transition-all duration-500' alt='template' />
+
 
 
               </div>
 
-              <div className='m-5 space-y-6 -mt-24'>
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
-                <img src='/img/tt.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl' alt='template' />
+              <div className='m-5 space-y-6 -mt-24'> 
+                <img src='/img/template/tem3.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl hover:scale-110 cursor-pointer transition-all duration-500' alt='template' />
+                <img src='/img/template/tem4.webp ' className='rounded-[2.5rem] w-[350px] h-[200px] shadow-xl hover:scale-110 cursor-pointer transition-all duration-500' alt='template' />
 
               </div>
 

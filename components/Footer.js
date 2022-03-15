@@ -14,7 +14,7 @@ function Footer() {
     ]
     return (
         <div>
-            <div className='mt-24  md:flex hidden flex-col  bg-[#EBEBEB] font-[sans]' >
+            <div className='mt-24  md:flex hidden flex-col  bg-[#EBEBEB] font-[sans] ' >
                 <div className='bg-redprimary w-full py-2 flex '>
 
                 </div>
@@ -39,15 +39,15 @@ function Footer() {
                                     <div className='flex flex-row space-x-3 space-x-reverse'>
                                         <span className='font-bold '>ایمیل :</span>
                                         {/* <p className='hover:text-black'>info@utabpars.com</p> */}
-                                        <a  href='mailto:info@utabpars.com'><span className='hover:text-redprimary'>info@utabpars.com</span></a>
-                                       
+                                        <a href='mailto:info@utabpars.com'><span className='hover:text-redprimary'>info@utabpars.com</span></a>
+
                                     </div>
 
                                     <div className='flex flex-row space-x-3 space-x-reverse'>
                                         <span className='font-bold '>تلفن :</span>
                                         <ul className='flex flex-row space-x-5 space-x-reverse '>
-                                        <a   href='tel:07191013320'><li className='hover:text-redprimary '>07191013320</li></a>
-                                        <a  href='tel:07191013320'><li className='hover:text-redprimary'>09378451002</li></a>
+                                            <a href='tel:07191013320'><li className='hover:text-redprimary '>07191013320</li></a>
+                                            <a href='tel:07191013320'><li className='hover:text-redprimary'>09378451002</li></a>
                                             {/* <li className='hover:text-black'>07191013320</li> */}
                                             {/* <li className='hover:text-black' >09378451002</li> */}
                                         </ul>
@@ -62,6 +62,17 @@ function Footer() {
                                         }
 
                                     </div>
+
+                                    <div className=' py-2 flex space-x-5 space-x-reverse justify-start mt-3 '>
+                                        <div className='flex flex-col'>
+                                            <label className='text-sm mb-2'>برای  دریافت تخفیف های جدید ایمیل خود را وارد کنید</label>
+                                            <input placeholder='عضویت خبرنامه' className=' text-sm  bg-white rounded-xl h-[2.5rem] text-right p-3 text-gray-500 border-none' />
+
+                                        </div>
+                                        <button className='bg-gray-500 text-sm rounded-xl w-20 mt-8 self-center text-white p-2 transition-all ease-out hover:scale-110'>عضویت</button>
+
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -98,13 +109,27 @@ function Footer() {
                     <div className='mb-3'  >
                         <div className=''></div>
 
-                        <div className='text-center text-sm '><p> کپی رایت © 1400. همه حقوق محفوظ است<a className="mx-1 text-redutab" href="https://www.utabpars.com">یوتاب پارس</a></p></div>
+                        <div className='text-center flex flex-row-reverse  justify-center text-sm space-x-1 space-x-reverse' >
+                            <p> کپی رایت © 1400. همه حقوق محفوظ است</p>
+                            <a className="mx-1 text-redutab" href="https://www.utabpars.com">یوتاب پارس</a>
+                        </div>
                     </div>
                 </div>
 
 
                 {/* <FooterBG className='w-full h-full ' /> */}
             </div>
+
+
+
+
+
+
+
+
+
+
+
             {/* mobilde respnsive */}
             <div className='flex flex-col md:hidden '>
                 <div className=' py-1 flex bg-redprimary'></div>
@@ -117,7 +142,7 @@ function Footer() {
 
                         </div>
                         {/* utabpars */}
-                        <div dir='rtl' className=' text-black cursor-pointer text-justify m-3 text-lg '>
+                        <div dir='rtl' className=' text-black r text-justify m-3 text-lg '>
                             <p className='hover:text-black mb-3 mt-3'> خدمات این پکیج شامل : طراحی و پیاده سازی اصول جذب آن  تدوین استراتژی محتوایی و انتشار  آن در زمان</p>
                             <div>
                                 <div className='flex flex-col mb-3 items-center mt-10'>
@@ -133,8 +158,8 @@ function Footer() {
                                 <div className='flex flex-col items-center mt-8'>
                                     <span className='font-bold '>تلفن :</span>
                                     <ul className='flex flex-col'>
-                                    <a   href='tel:07191013320'><li className='hover:text-redprimary '>07191013320</li></a>
-                                        <a  href='tel:07191013320'><li className='hover:text-redprimary'>09378451002</li></a>
+                                        <a href='tel:07191013320'><li className='hover:text-redprimary '>07191013320</li></a>
+                                        <a href='tel:07191013320'><li className='hover:text-redprimary'>09378451002</li></a>
                                         {/* <li className='hover:text-black'>07191013320</li>
                                         <li className='hover:text-black' >09378451002</li> */}
                                     </ul>
@@ -142,8 +167,8 @@ function Footer() {
                                 <div className=' py-2 flex space-x-5 space-x-reverse justify-center mt-3 '>
                                     {
                                         socialItem.map((item, index) =>
-                                            <img key={index} src={item} alt='social' className=' text-darkblue w-[3px]
-                                                      cursor-pointer transition-all duration-500
+                                            <img key={index} src={item} alt='social' className=' text-darkblue w-[40px]
+                                                       transition-all duration-500
                                                       hover:-translate-y-4  hover:scale-125' />
                                         )
                                     }

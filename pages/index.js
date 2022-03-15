@@ -11,6 +11,8 @@ import dynamic from 'next/dynamic'
 
 import loadable from '@loadable/component'
 import LeaderShip from '../components/LeaderShip'
+import Advice from '../components/advice'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
 
@@ -25,9 +27,11 @@ export default function Home() {
   // const ServiceInfo = loadable(() => import('../components/ServiceInfo'))
   // const Header = loadable(() => import('../components/Header'))
   // const Blog = loadable(() => import('../components/Blog'))
+
   return (
+
     <>
-     <Head>
+      <Head>
         <meta charset="utf-8" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,27 +54,31 @@ export default function Home() {
 
 
       </Head>
+
+      {/* <button className='rounded-full bg-redprimary p-4 px-9'>advize</button> */}
+
       <div className='container xl:px-[120px] font-[sans]  '>
         {/* <div className='bg-ddd bg-no-repeat'> */}
-     
+  
+        {/* <Advice /> */}
 
-        
         <Header />
         <Slider />
-       
+        {/* <Advice/> */}
+
         <ServiceInfo />
-    
+
         {/* <Why /> */}
         <Why />
 
-        <Suggest/>
-        <Template/>
-        <LeaderShip/>
-        <Blog/>
+        <Suggest />
+        <Template />
+        <LeaderShip  />
+        <Blog />
       </div>
-     
-        <Footer />
-    
+
+      <Footer />
+
 
     </>
   )
