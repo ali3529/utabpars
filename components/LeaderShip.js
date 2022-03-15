@@ -14,17 +14,17 @@ function LeaderShip() {
                     <div dir='rtl' className='bg-[#ecebeb] mt-5 w-full rounded-2xl flex flex-col  '>
                         <div className='mx-5 my-1 text-xl flex flex-col p-3 space-y-3 space-x-reverse mt-4'>
                             <label className='px-8' >نام و نام خانوادگی</label>
-                            <input className=' bg-white text-[16px] rounded-xl h-[4.1rem] mx-4 text-right p-3 text-gray-500 border-none' />
+                            <input className=' outline-none bg-white text-[16px] rounded-xl h-[4.1rem] mx-4 text-right p-3 text-gray-500 border-none' />
                         </div>
                         <div className='mx-5 my-1 text-xl flex flex-col p-3 space-y-3 space-x-reverse'>
                             <label className='px-8' >شماره تماس</label>
-                            <input type={'number'} className=' text-[16px]  mx-4 m-0 bg-white rounded-xl h-[4.1rem] text-right p-3 text-gray-500 border-none' />
+                            <input type={'number'} className='outline-none text-[16px]  mx-4 m-0 bg-white rounded-xl h-[4.1rem] text-right p-3 text-gray-500 border-none' />
                         </div>
                         <div className='mx-5 my-1 text-xl flex flex-col p-3 space-y-3   space-x-reverse'>
                         
                                 <label className='px-8' >نوع سفارش</label>
                            
-                            <select name="cars" id="cars" className=' mx-4 bg-white rounded-xl h-[4.1rem] text-right 
+                            <select name="cars" id="cars" className='outline-none mx-4 bg-white rounded-xl h-[4.1rem] text-right 
                              p-3 text-gray-500 border-none cursor-pointer text-[16px] -px-4 '>
                                 <option className='text-sm ' value="1">طراحی وبسایت</option>
                                 <option className='text-sm ' value="2">سئو و بهینه سازی سایت</option>
