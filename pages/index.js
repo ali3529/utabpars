@@ -28,6 +28,17 @@ export default function Home() {
   // const Header = loadable(() => import('../components/Header'))
   // const Blog = loadable(() => import('../components/Blog'))
 
+  useEffect(() => {
+    !function () {
+      var i = "5gCcDG", a = window, d = document;
+      function g() {
+        var g = d.createElement("script"), s = "https://www.goftino.com/widget/" + i, l = localStorage.getItem("goftino_" + i);
+        g.async = !0, g.src = l ? s + "?o=" + l : s;
+        d.getElementsByTagName("head")[0].appendChild(g);
+      } "complete" === d.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
+    }();
+  })
+
   return (
 
     <>
@@ -59,21 +70,18 @@ export default function Home() {
 
       <div className='container xl:px-[120px] font-[sans]  '>
         {/* <div className='bg-ddd bg-no-repeat'> */}
-  
-        {/* <Advice /> */}
+
+    
 
         <Header />
         <Slider />
-        {/* <Advice/> */}
-
+  
         <ServiceInfo />
-
-        {/* <Why /> */}
         <Why />
 
         <Suggest />
         <Template />
-        <LeaderShip  />
+        <LeaderShip />
         <Blog />
       </div>
 

@@ -34,10 +34,10 @@ function Header() {
             title: "بلاگ",
             url: "https://utabpars.com/blog/",
             img: <svg className="dark:text-white text-gray-800  h-6 w-6" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 11C1 13.2418 1.12143 14.975 1.42108 16.3234C1.71821 17.6603 2.17712 18.5568 2.81017 19.1898C3.44322 19.8229 4.33967 20.2818 5.67664 20.5789C7.02497 20.8786 8.7582 21 11 21C13.2418 21 14.975 20.8786 16.3234 20.5789C17.6603 20.2818 18.5568 19.8229 19.1898 19.1898C19.8229 18.5568 20.2818 17.6603 20.5789 16.3234C20.8786 14.975 21 13.2418 21 11C21 8.7582 20.8786 7.02497 20.5789 5.67664C20.2818 4.33967 19.8229 3.44322 19.1898 2.81017C18.5568 2.17712 17.6603 1.71821 16.3234 1.42108C14.975 1.12143 13.2418 1 11 1C8.7582 1 7.02497 1.12143 5.67664 1.42108C4.33967 1.71821 3.44322 2.17712 2.81017 2.81017C2.17712 3.44322 1.71821 4.33967 1.42108 5.67664C1.12143 7.02497 1 8.7582 1 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M9.16699 6.41666H12.8337" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M6.41699 11H15.5837" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M9.16699 15.5833L12.8337 15.5833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1 11C1 13.2418 1.12143 14.975 1.42108 16.3234C1.71821 17.6603 2.17712 18.5568 2.81017 19.1898C3.44322 19.8229 4.33967 20.2818 5.67664 20.5789C7.02497 20.8786 8.7582 21 11 21C13.2418 21 14.975 20.8786 16.3234 20.5789C17.6603 20.2818 18.5568 19.8229 19.1898 19.1898C19.8229 18.5568 20.2818 17.6603 20.5789 16.3234C20.8786 14.975 21 13.2418 21 11C21 8.7582 20.8786 7.02497 20.5789 5.67664C20.2818 4.33967 19.8229 3.44322 19.1898 2.81017C18.5568 2.17712 17.6603 1.71821 16.3234 1.42108C14.975 1.12143 13.2418 1 11 1C8.7582 1 7.02497 1.12143 5.67664 1.42108C4.33967 1.71821 3.44322 2.17712 2.81017 2.81017C2.17712 3.44322 1.71821 4.33967 1.42108 5.67664C1.12143 7.02497 1 8.7582 1 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                <path d="M9.16699 6.41666H12.8337" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                <path d="M6.41699 11H15.5837" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                <path d="M9.16699 15.5833L12.8337 15.5833" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
             </svg>
         },
         {
@@ -83,9 +83,9 @@ function Header() {
                 </div>
                 {/* phone */}
                 <div className='flex flex-row items-center space-x-2'>
-                    <a href='tel:09358451002'> <img src='/img/ic_phone.svg' alt='phone' width="38.004" height="38.004" className='hover:rotate-45  hover:scale-125 transition-all cursor-pointer' />
+                    <a href='tel:09378451002'> <img src='/img/ic_phone.svg' alt='phone' width="38.004" height="38.004" className='hover:rotate-45  hover:scale-125 transition-all cursor-pointer' />
                     </a>
-                    <a href='tel:09358451002' className='transition-all duration-200 hover:-translate-y-2 hover:scale-105'><span className='text-graytext hover:text-redutab font-bold  '>09358451002</span></a>
+                    <a href='tel:09378451002' className='transition-all duration-200 hover:-translate-y-2 hover:scale-105'><span className='text-graytext hover:text-redutab font-bold  '>09378451002</span></a>
 
                 </div>
             </div>
@@ -105,7 +105,7 @@ function Header() {
                 {/* logo */}
                 <img src='/img/utabpars.svg ' alt='utabpars' width="50" height="40" />
                 {/* tell */}
-                <a href='tel:09358451002'>
+                <a href='tel:09378451002'>
 
                     <img src='/img/ic_phone.svg' alt='phone' width="35.004" height="38.004" className='hover:rotate-45 hover:scale-125 transition-all cursor-pointer' />
 
@@ -143,8 +143,8 @@ function Header() {
                                 {/* search */}
                                 <div className='m-5 flex flex-row  py-2 justify-between bg-[#ECEEEF] rounded-xl px-4'>
                                     <svg className='h-10' width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="7.82495" cy="7.82492" r="6.74142" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle>
-                                        <path d="M12.5137 12.8638L15.1568 15.4999" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <circle cx="7.82495" cy="7.82492" r="6.74142" stroke="#64748B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></circle>
+                                        <path d="M12.5137 12.8638L15.1568 15.4999" stroke="#64748B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                                     </svg>
                                     <input className='outline-none bg-[#ECEEEF] px-5 text-gray-600 text-sm rounded-xl w-full h-10 text-right' placeholder='دنبال چی میکردی' />
 
