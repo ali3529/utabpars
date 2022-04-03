@@ -2,7 +2,7 @@ import React from 'react'
 import WhyBack from '../public/img/why_utab_back.svg'
 function Why() {
   return (
-    <div className='' >
+    <div id='whyutab' className='' >
 
       <div className='  pb-28 sm:-m-5 m-3 '>
 
@@ -14,7 +14,9 @@ function Why() {
             <div className='mb-12 sm:hidden flex '>
               {/* <WhyVector /> */}
 
-              <img src='/img/success.webp' className='p-6 -mb-10' alt='whyutab' />
+              {/* <img src='/img/success.webp' className='p-6 -mb-10' alt='whyutab' /> */}
+              
+              <img src='/img/whyutabpic.webp' className='p-10 -mb-10' alt='whyutab' />
               {/* title */}
             </div>
             {/* text */}
@@ -34,7 +36,7 @@ function Why() {
 
             <div className='mb-12 hidden sm:flex '>
               {/* <WhyVector /> */}
-              <img src='/img/success.webp' className='p-16' alt='whyutab' />
+              <img src='/img/whyutabpic.webp' className='p-24' alt='whyutab' />
             </div>
           </div>
         </div>

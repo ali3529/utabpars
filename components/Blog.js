@@ -3,7 +3,7 @@ import React from 'react'
 function Blog() {
     const numbers = [1, 2, 3, 4, 5];
     return (
-        <div className='mt-12 py-12 sm:px-12 px-3'>
+        <div id='blog' className='mt-12 py-12 sm:px-12 px-3'>
 
             {/* title */}
             <div className='flex flex-row-reverse space-x-2 space-x-reverse justify-center'>

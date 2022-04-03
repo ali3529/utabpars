@@ -13,7 +13,7 @@ function Footer() {
         '/img/social/ic_twitter.svg'
     ]
     return (
-        <div>
+        <div id='footer'>
             <div className='mt-24  md:flex hidden flex-col  bg-[#EBEBEB] font-[sans] ' >
                 <div className='bg-redprimary w-full py-2 flex '>
 

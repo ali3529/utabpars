@@ -43,7 +43,7 @@ function ServiceInfo() {
     ]
 
     return (
-        <div className='sm:mb-32 mb-0 ' >
+        <div id='service' className='sm:mb-32 mb-0 ' >
             {/* title */}
             <div className=' flex justify-center mt-10 mb-5 sm:mb-0'>
                 <div className='flex flex-col items-center'>

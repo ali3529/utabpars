@@ -3,7 +3,7 @@ import WhyBack from '../public/img/why_utab_back.svg'
 import WhyVector from '../public/img/why_utab_vector.svg'
 function Template() {
   return (
-    <div className='mt-44' >
+    <div className='mt-44' id='template' >
       <div className='  pb-28 sm:-m-5 m-3 '>
 
         <div className=' rounded-[2.5rem] sm:skew-y-3 sm:-skew-x-3 rotate-[1deg]   bg-redprimary'>

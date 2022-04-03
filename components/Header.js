@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Transition } from '@tailwindui/react'
+import { Link } from 'react-scroll'
 function Header() {
     const [collapseMenu, setcollapseMenu] = useState(false)
+    var Scroll = require('react-scroll');
+    var scroller = Scroll.scroller;
     const item = [
         {
             title: "صفحه نخست",
-            url: "/test",
+            url: "/",
             img: <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24.028"
@@ -24,7 +27,7 @@ function Header() {
         },
         {
             title: "نمونه کار ها",
-            url: "https://utabpars.com/portfolio.php",
+            url: "template",
             img: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
@@ -32,7 +35,7 @@ function Header() {
         },
         {
             title: "بلاگ",
-            url: "https://utabpars.com/blog/",
+            url: "blog",
             img: <svg className="dark:text-white text-gray-800  h-6 w-6" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 11C1 13.2418 1.12143 14.975 1.42108 16.3234C1.71821 17.6603 2.17712 18.5568 2.81017 19.1898C3.44322 19.8229 4.33967 20.2818 5.67664 20.5789C7.02497 20.8786 8.7582 21 11 21C13.2418 21 14.975 20.8786 16.3234 20.5789C17.6603 20.2818 18.5568 19.8229 19.1898 19.1898C19.8229 18.5568 20.2818 17.6603 20.5789 16.3234C20.8786 14.975 21 13.2418 21 11C21 8.7582 20.8786 7.02497 20.5789 5.67664C20.2818 4.33967 19.8229 3.44322 19.1898 2.81017C18.5568 2.17712 17.6603 1.71821 16.3234 1.42108C14.975 1.12143 13.2418 1 11 1C8.7582 1 7.02497 1.12143 5.67664 1.42108C4.33967 1.71821 3.44322 2.17712 2.81017 2.81017C2.17712 3.44322 1.71821 4.33967 1.42108 5.67664C1.12143 7.02497 1 8.7582 1 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
                 <path d="M9.16699 6.41666H12.8337" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -42,21 +45,21 @@ function Header() {
         },
         {
             title: "خدمات",
-            url: "#",
+            url: "service",
             img: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
             </svg>
         },
         {
             title: "تماس با ما",
-            url: "https://utabpars.com/contact.php",
+            url: "/contact-us.html",
             img: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
         },
         {
             title: "درباره ما",
-            url: "https://utabpars.com/about-us.php",
+            url: "/about-us.html",
             img: <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -70,22 +73,39 @@ function Header() {
                     <div>
                         <ul className='flex flex-row-reverse  m-5'>
                             {item.map((item, index) =>
-                                <li key={index} className='hover:text-redprimary text-graytext cursor-pointer mx-4 font-bold'>
-                                    <a key={index} href={item.url} >
-                                        {item.title}
+                                index == 5 || index == 4 || index == 0 ?
+                                    <li key={index} className='hover:text-redprimary text-graytext cursor-pointer mx-4 font-bold'>
 
-                                    </a>
-                                </li>)}
+                                        <a key={index}
+                                            href={item.url}
+                                        >
+                                            {item.title}
+
+                                        </a>
+                                    </li>
+                                    : <li key={index} className='hover:text-redprimary text-graytext cursor-pointer mx-4 font-bold'>
+
+                                        <Link key={index}
+                                            to={item.url}
+                                            smooth={true}
+                                        >
+                                            {item.title}
+
+                                        </Link>
+                                    </li>
+
+                            )}
 
                         </ul>
                     </div>
                     <img src='/img/utabpars.svg ' alt='utabpars' width="98" height="98" />
                 </div>
                 {/* phone */}
-                <div className='flex flex-row items-center space-x-2'>
-                    <a href='tel:09378451002'> <img src='/img/ic_phone.svg' alt='phone' width="38.004" height="38.004" className='hover:rotate-45  hover:scale-125 transition-all cursor-pointer' />
+                <div className='flex flex-row items-center space-x-2  '>
+                    <img src='/img/phone_back.svg ' className='absolute -z-50' />
+                    <a href='tel:09378451002'> <img src='/img/phone2.svg' alt='phone' width="22.004" height="22.004" className='hover:rotate-45  hover:scale-125 transition-all cursor-pointer' />
                     </a>
-                    <a href='tel:09378451002' className='transition-all duration-200 hover:-translate-y-2 hover:scale-105'><span className='text-graytext hover:text-redutab font-bold  '>09378451002</span></a>
+                    <a href='tel:09378451002' className='transition-all duration-200  hover:scale-110'><span className='text-white hover:text-black font-bold  '>09378451002</span></a>
 
                 </div>
             </div>
@@ -97,10 +117,15 @@ function Header() {
                 {/* item */}
 
                 <div>
-
-                    <svg onClick={(e) => setcollapseMenu(!collapseMenu)} width="32" className="text-biscay-700 dark:text-white  ring-redutab " height="36" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2.5H21.5M2 9H21.5M2 15.5H21.5" stroke="currentColor" strokeWidth="2.65625" strokeLinecap="round" strokeLinejoin="round"></path>
+                    <svg onClick={(e) => setcollapseMenu(!collapseMenu)} xmlns="http://www.w3.org/2000/svg" width="32" height="27" viewBox="0 0 32 27">
+                        <path id="bars" d="M19.75,18h27.5a2.25,2.25,0,0,0,0-4.5H19.75a2.25,2.25,0,0,0,0,4.5Zm27.5,18H19.75a2.25,2.25,0,0,0,0,4.5h27.5a2.25,2.25,0,0,0,0-4.5Zm0-11.25H19.75a2.25,2.25,0,0,0,0,4.5h27.5a2.25,2.25,0,0,0,0-4.5Z" transform="translate(-17.5 -13.5)" />
                     </svg>
+
+                    {/* <svg  width="32" className="text-biscay-700 dark:text-white  ring-redutab " height="36" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2.5H21.5M2 9H21.5M2 15.5H21.5" stroke="currentColor" strokeWidth="2.65625" strokeLinecap="round" strokeLinejoin="round"></path>
+                    </svg> */}
+
+                    
                 </div>
                 {/* logo */}
                 <img src='/img/utabpars.svg ' alt='utabpars' width="50" height="40" />
@@ -156,7 +181,7 @@ function Header() {
                                         <ul className='flex flex-col items-end  m-5'>
                                             {item.map((item, index) =>
                                                 <li key={index} className='hover:text-redprimary  flex flex-row text-gray-800 space-x-5 bg   mx-4 my-2'>
-                                                    <a key={index} href={item.url} >
+                                                    <a key={index} href={item.url} smooth={true} >
                                                         {item.title}
 
                                                     </a>

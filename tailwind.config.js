@@ -26,6 +26,7 @@ module.exports = {
         'ff': "url('../public/img/suggest_bg.svg')",
         'ddd': "url('../public/img/bg.svg')",
         'why': "url(../public/img/why_utab_back.svg)",
+        'ph': "url(../public/img/phone_back.svg)",
      
       }
 

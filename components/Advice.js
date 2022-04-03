@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 
-function Advice() {
+function Advice(props) {
   const Scroll = require('react-scroll');
   const scroll = Scroll.animateScroll;
-
+  console.log(props.children.props.children);
   const [y, setY] = useState(false);
   const handleNavigation = (e) => {
 
     const window = e.currentTarget;
-    console.log(window.scrollY);
+
     if (2500 > window.scrollY) {
       setY(false)
     } else {
@@ -30,7 +30,7 @@ function Advice() {
         {
           y ? <button className='rounded-2xl bg-blue-600 p-4 px-9 text-white' onClick={
             (e) => scroll.scrollTo(3800)
-          }> مشاوره</button> : null
+          }> {props.children.props.children}</button> : null
         }
 
       </div>
